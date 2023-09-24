@@ -1,0 +1,76 @@
+body{
+    background-color: rgba(0, 0, 0, 0.979)
+}
+nav {
+  background-color: rgb(22, 22, 22);
+  float: top;
+  display: block;
+  font-family: "Courier New";
+  font-size: 19px;
+  width: 100%;
+  height: 50px;
+  word-spacing: 170px;
+}
+
+header {
+    margin-left: 200px;
+    padding-left: 5px;
+  }
+p {
+    color: rgb(211, 190, 2);
+    font-family: "Courier New";
+    font-size: 18px;
+    padding-left: 300px;
+    margin-right: 300px;
+  }
+h1 {
+    color: rgb(141, 19, 19);
+    font-family: Garamond, serif;
+    
+}
+h2 {
+    color: rgb(141, 19, 19);
+    font-family: Garamond, serif;
+}
+h3 {
+    color: rgb(141, 19, 19);
+    font-family: Garamond, serif;
+}
+
+a:link {
+    text-decoration: none;
+    color:rgba(255, 230, 0, 0.849)
+}
+a:visited {
+	color:rgba(255, 230, 0, 0.753)
+}
+nav a
+{  
+    padding: 4px;
+    text-decoration: none;
+    font-weight: bold;
+    color: rgba(255, 230, 0, 0.829);
+    text-transform: uppercase;
+    margin-bottom: 5px;
+    margin-right: 10px;
+}
+nav a:visited
+{
+    color:  rgba(255, 230, 0, 0.733);
+}
+nav a:hover {
+    background: rgb(221, 188, 0);
+    color: rgb(255, 0, 0);
+    padding-top: 0.5px;
+}
+ul {
+    color: rgb(167, 167, 167);
+    font-size: 30px;
+    font-family: 'Times New Roman', Times, serif;
+}
+th, td {
+    color: rgba(255, 230, 0, 0.884);
+}
+ol{
+    color: rgb(36, 122, 192);
+}
