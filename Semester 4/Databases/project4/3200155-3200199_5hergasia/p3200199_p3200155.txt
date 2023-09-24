@@ -1,0 +1,6 @@
+<Παναγιώτης Τριανταφυλλίδης> - <3200199>
+<Γεωργία Πέτσα> - <3200155>
+Εndpoint: <gpt2001.postgres.database.azure.com>
+Username: <examiner@gpt2001>
+Password: <3366>
+Database: <postgres>
