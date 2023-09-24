@@ -1,0 +1,56 @@
+EXPENSE_TYPE_LIST
+{
+	EXPENSE_TYPE
+	{
+		TYPE 1
+		CODE	1001
+		DESCR	"Trip"
+		GENCOMP	  20.0	
+		PRICEOFCOMP   5.0
+		MEASURE	  "km"
+	}
+	EXPENSE_TYPE
+	{
+		TYPE 1
+		CODE	1002
+		DESCR	 "Hlektronika"
+		GENCOMP	   100.0
+		PRICEOFCOMP   20.0
+		MEASURE	   "$"
+	}
+	EXPENSE_TYPE
+	{
+		TYPE 1
+		CODE	1003
+		DESCR	 "Diamonh"
+		GENCOMP    500.0
+		PRICEOFCOMP   100.0
+		MEASURE	   "day"
+	}
+	EXPENSE_TYPE
+	{
+		TYPE 2
+		CODE	1004
+		DESCR	 "Nosokomeio"
+		GENCOMP    40.0
+		PERS    0.1
+	}
+	EXPENSE_TYPE
+	{
+		TYPE 2
+		CODE	1005
+		DESCR	 "Aeroplano"
+		GENCOMP	   60.0
+		PERS    0.3
+	}
+	EXPENSE_TYPE
+	{
+		TYPE 2
+		CODE	1006
+		DESCR    "Ploio"
+		GENCOMP	  60.0
+		PERS	0.3
+	}
+}
+
+	

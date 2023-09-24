@@ -1,0 +1,12 @@
+vendor_name = ModelSim
+source_file = 1, C:/Users/Gogo/Desktop/DSD-050/Quartus/Provlima_2/provlima_2.bdf
+source_file = 1, C:/Users/Gogo/Desktop/DSD-050/Quartus/Provlima_2/Waveform.vwf
+source_file = 1, C:/Users/Gogo/Desktop/DSD-050/Quartus/Provlima_2/Waveform1.vwf
+source_file = 1, C:/Users/Gogo/Desktop/DSD-050/Quartus/Provlima_2/db/provlima_2.cbx.xml
+design_name = provlima_2
+instance = comp, \x1~I\, x1, provlima_2, 1
+instance = comp, \x4~I\, x4, provlima_2, 1
+instance = comp, \x3~I\, x3, provlima_2, 1
+instance = comp, \x2~I\, x2, provlima_2, 1
+instance = comp, \inst4~0\, inst4~0, provlima_2, 1
+instance = comp, \f~I\, f, provlima_2, 1

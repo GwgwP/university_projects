@@ -1,0 +1,35 @@
+EXPENSE_LIST
+{
+	EXPENSE
+	{
+		EMPLOYEE_CODE 1001
+		EXPENSE_TYPE 1
+		EXPENSE_CODE 1001
+		JUSTIF  "Trip to Xalkida"
+		VAL   10.0 
+	}
+	EXPENSE
+	{
+		EMPLOYEE_CODE 1002
+		EXPENSE_TYPE 1
+		EXPENSE_CODE 1003
+		JUSTIF  "One Night in the Hotel Paramythas(5*)"
+		VAL   5.0
+	}
+	EXPENSE
+	{
+		EMPLOYEE_CODE 1003
+		EXPENSE_TYPE 2
+		EXPENSE_CODE 1005
+		JUSTIF  "Flight to Egypt"
+		VAL   60.0
+	}
+	EXPENSE
+	{
+		EMPLOYEE_CODE 1004
+		EXPENSE_TYPE 2
+		EXPENSE_CODE 1006
+		JUSTIF  "Ploio gia Elafonhso"
+		VAL   40.0
+	}
+}

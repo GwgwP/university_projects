@@ -1,0 +1,17 @@
+vendor_name = ModelSim
+source_file = 1, C:/Quartus/Problem/firstproblem.vhd
+source_file = 1, C:/Quartus/Problem/Waveform.vwf
+source_file = 1, c:/intelfpga_lite/19.1/quartus/libraries/vhdl/ieee/prmtvs_b.vhd
+source_file = 1, c:/intelfpga_lite/19.1/quartus/libraries/vhdl/ieee/prmtvs_p.vhd
+source_file = 1, c:/intelfpga_lite/19.1/quartus/libraries/vhdl/ieee/timing_b.vhd
+source_file = 1, c:/intelfpga_lite/19.1/quartus/libraries/vhdl/ieee/timing_p.vhd
+source_file = 1, C:/Quartus/Problem/db/firstproblem.cbx.xml
+design_name = firstproblem
+instance = comp, \x5~I\, x5, firstproblem, 1
+instance = comp, \x3~I\, x3, firstproblem, 1
+instance = comp, \x4~I\, x4, firstproblem, 1
+instance = comp, \I5|out3~0\, I5|out3~0, firstproblem, 1
+instance = comp, \x1~I\, x1, firstproblem, 1
+instance = comp, \x2~I\, x2, firstproblem, 1
+instance = comp, \I5|out3~1\, I5|out3~1, firstproblem, 1
+instance = comp, \f~I\, f, firstproblem, 1

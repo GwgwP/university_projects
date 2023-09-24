@@ -1,0 +1,31 @@
+EMPLOYEE_LIST
+{
+	EMPLOYEE
+	{
+		CODE	1001
+		SURNAME	 Papadopoylos			
+		FIRSTNAME   Giorgos
+		GEN_MAX_COMP   200.0
+	}
+	EMPLOYEE
+	{
+		CODE	1002
+		SURNAME	 Poypoylakhs			
+		FIRSTNAME   Vrasidas
+		GEN_MAX_COMP   500.0
+	}
+	EMPLOYEE
+	{
+		CODE	1003		
+		SURNAME	  Zaxaratoys			
+		FIRSTNAME   Kleanthis
+		GEN_MAX_COMP   300.0
+	}
+	EMPLOYEE
+	{
+		CODE	1004
+		SURNAME	  Trikoyphs				
+		FIRSTNAME   Ermiwnhs
+		GEN_MAX_COMP   600.0
+	}
+}

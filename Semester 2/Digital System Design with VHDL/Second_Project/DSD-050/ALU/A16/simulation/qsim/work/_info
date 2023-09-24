@@ -1,0 +1,96 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+dC:/Quartus/A16/simulation/qsim
+Ealu_16
+Z0 w1622061115
+Z1 DPx4 ieee 16 vital_primitives 0 22 G>kiXP8Q9dRClKfK1Zn7j1
+Z2 DPx4 maxv 14 maxv_atom_pack 0 22 `YXhbnPNiS:bB3zbmbF772
+Z3 DPx4 ieee 12 vital_timing 0 22 J>EBealN09f8GzldA[z2>3
+Z4 DPx4 maxv 15 maxv_components 0 22 EJJMbHV<EJ`DANOSmdPih1
+Z5 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
+Z6 DPx4 ieee 14 std_logic_1164 0 22 eNV`TJ_GofJTzYa?f<@Oe1
+Z7 dC:/Users/Gogo/Desktop/ergasia_sps/A16/simulation/qsim
+Z8 8ALU_16.vho
+Z9 FALU_16.vho
+l0
+L35
+VE>lYVA<_mf^YBjzdQIddM3
+!s100 F5>O>B>B1WYo^UVJkFC_00
+Z10 OV;C;10.5b;63
+32
+Z11 !s110 1622061117
+!i10b 1
+Z12 !s108 1622061117.000000
+Z13 !s90 -work|work|ALU_16.vho|
+Z14 !s107 ALU_16.vho|
+!i113 1
+Z15 o-work work
+Z16 tExplicit 1 CvgOpt 0
+Astructure
+R1
+R2
+R3
+R4
+R5
+R6
+DEx4 work 6 alu_16 0 22 E>lYVA<_mf^YBjzdQIddM3
+l151
+L48
+Vj^=1_GR_AfmITN_^`HUMC2
+!s100 ZS2X__Ecn2K6_3@VioXXA3
+R10
+32
+R11
+!i10b 1
+R12
+R13
+R14
+!i113 1
+R15
+R16
+Ealu_16_vhd_vec_tst
+Z17 w1622061113
+R5
+R6
+R7
+Z18 8Waveform.vwf.vht
+Z19 FWaveform.vwf.vht
+l0
+L32
+VUgDz[8TSiO7R_A]2b]:n71
+!s100 k1?4AVZ;[g=GOc>TG9oYE3
+R10
+32
+Z20 !s110 1622061118
+!i10b 1
+R12
+Z21 !s90 -work|work|Waveform.vwf.vht|
+Z22 !s107 Waveform.vwf.vht|
+!i113 1
+R15
+R16
+Aalu_16_arch
+R5
+R6
+Z23 DEx4 work 18 alu_16_vhd_vec_tst 0 22 UgDz[8TSiO7R_A]2b]:n71
+l51
+L34
+VG9?zUSJ0l4bfle5^8bWmo3
+!s100 Pj`L:kYBl]YbV<OFQVXE30
+R10
+32
+R20
+!i10b 1
+R12
+R21
+R22
+!i113 1
+R15
+R16

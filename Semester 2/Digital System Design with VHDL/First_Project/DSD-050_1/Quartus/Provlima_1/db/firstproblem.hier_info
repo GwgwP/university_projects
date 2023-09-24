@@ -1,0 +1,59 @@
+|firstproblem
+x1 => and_3:I2.in2
+x1 => and_3:I4.in2
+x2 => and_3:I2.in1
+x2 => and_3:I3.in1
+x2 => and_3:I4.in1
+x3 => and_2:I0.in2
+x4 => and_3:I3.in2
+x4 => and_2:I1.in2
+x4 => and_3:I4.in3
+x5 => and_3:I3.in3
+x5 => and_2:I0.in1
+x5 => and_2:I1.in1
+x5 => and_3:I2.in3
+f <= or_5:I5.out3
+
+
+|firstproblem|and_2:I0
+in1 => out1.IN0
+in2 => out1.IN1
+out1 <= out1.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|firstproblem|and_2:I1
+in1 => out1.IN0
+in2 => out1.IN1
+out1 <= out1.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|firstproblem|and_3:I2
+in1 => out2.IN0
+in2 => out2.IN1
+in3 => out2.IN1
+out2 <= out2.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|firstproblem|and_3:I3
+in1 => out2.IN0
+in2 => out2.IN1
+in3 => out2.IN1
+out2 <= out2.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|firstproblem|and_3:I4
+in1 => out2.IN0
+in2 => out2.IN1
+in3 => out2.IN1
+out2 <= out2.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|firstproblem|or_5:I5
+in1 => out3.IN0
+in2 => out3.IN1
+in3 => out3.IN1
+in4 => out3.IN1
+in5 => out3.IN1
+out3 <= out3.DB_MAX_OUTPUT_PORT_TYPE
+
+
