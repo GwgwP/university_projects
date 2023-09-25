@@ -1,7 +1,7 @@
 # university_projects
-This is a repository for my university projects.
-Every folder contains my assignements of every semester. Most of them achieved highest grades (they are in Greek as the university courses were offered in Greek). 
-You can navigate across the folders and take a glimpse of what I have done these years.
+### This is a repository for my university projects.
+### Every folder contains my assignements of every semester. Most of them achieved **highest grades** (they are in *Greek* as the university courses were offered in Greek). 
+### You can navigate across the folders and take a glimpse of what I have done these years.
 ---
 ## Courses:
 
