@@ -4,7 +4,7 @@ Every folder contains my assignements of every semester. Most of them achieved h
 You can navigate across the folders and take a glimpse of what I have done these years.
 ---
 ## Courses:
-**1st semester**
+
 | Code   | Course title                                        |SEMESTER|ECTS|               
 |--------|-----------------------------------------------------|-------|-----|
 | 3117   |  Discrete Mathematics [CC]                          | 1     | 6   |
@@ -29,13 +29,28 @@ You can navigate across the folders and take a glimpse of what I have done these
 | 3436   |  Databases [ΒΔ] [CC]                                | 4     | 8   | 
 | 3464   |  Operating Systems [ΛΣ] [CC]                        | 4     | 8   | 
 |||||
-| 3541   | Information Systems Analysis and Design [CC]        | 5     | 8   | 
-| 3571   |Communication Networks [CC]                          | 5     | 8   |
-| 3515   | Logic [EC]                                          | 5     | 7   | 
-| 3531   | Artificial Intelligence [EC]                        | 5     | 7   | 
+| 3541   |  Information Systems Analysis and Design [CC]       | 5     | 8   | 
+| 3571   |  Communication Networks [CC]                        | 5     | 8   |
+| 3747   |  Technologies and Programming of Web Applications [E]| 7    | 6   |
 |||||
-| 3664   |  Distributed Systems [CC]                        | 6     | 8   | 
-
-|------|-----------------------------------------------------|-------|-----|
-
-
+| 3664   |  Distributed Systems [CC]                           | 6     | 8   | 
+| 3648   |  Software Engineering [CC]                          | 6     | 8   | 
+| 3662   |  Information System Security [EC]                   | 6     | 7   | 
+| 3543   |  Data Management and Analysis Systems [EC]          | 6     | 7   |
+| 3584   |  Technological Innovation and Entrepreneurship [E]  | 8     | 6   | 
+|||||
+| 3781   |  Computer Graphics [E]                              | 7     | 6   |
+| 3761   |  Network Security [E]                               | 7     | 6   |
+| 3515   |  Logic [EC]                                         | 5     | 7   | 
+| 3531   |  Artificial Intelligence [EC]                       | 5     | 7   | 
+| 3634   |  Compilers [E]                                      | 7     | 6   | 
+| 3745   |  Machine Learning [E]                               | 7     | 6   | 
+| 3882   |  Multimedia Technology [E]                          | 7     | 6   |
+|||||
+| 3612   |  Topics in Discrete Mathematics [E]                 | 8     | 6   | 
+| 3783   |  Human-Computer Interaction [E]                     | 8     | 6   | 
+| 3561   |  Computer Architecture [E]                          | 8     | 6   | 
+| 3743   |  Data Mining [E]                                    | 8     | 6   | 
+| 3713   |  Decision and Game Theory [E]                       | 8     | 6   | 
+| 2610   |  Business Policy and Strategy [E]                   | 8     | 6   | 
+|||||
