@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+    <head>
+        <meta charset="utf-8">
+        <title>Etch a Sketch</title>
+        <meta name="author" content="Georgia Petsa">
+        <link rel="stylesheet" href="style.css">
+    </head>
+
+    <body>
+        <div class='reset-page'>
+            <button>Etch a Sketch</button>
+        </div>
+        <div class = 'container'>
+        </div>
+        <script>
+            const gridSize = 16;
+
+            const resetButton = document.querySelector('button');
+            const container = document.querySelector('.container');
+
+            const createGrid = (numOfGrids)=>
+            {   
+                const wrapper = document.createElement('div');
+                wrapper.classList.add('wrapper');
+
+                
+                
+                //left to right & top to bottom 
+                for( let i = 0; i<numOfGrids;i++)
+                {
+                    const row = document.createElement('div');
+                    row.classList.add('row-grid')
+                    
+                    for(let j=0; j< numOfGrids;j++)
+                    {
+                        const wh = 960/numOfGrids;
+                        const box =document.createElement('div')
+                        box.classList.add('box-grid')
+                        
+                        box.style.width=`${wh}px`;
+                        box.style.height=`${wh} px`;
+
+                        box.addEventListener('mouseenter', ()=>{box.style.backgroundColor='black'})
+
+                        row.appendChild(box);
+                    }
+                    
+                    wrapper.appendChild(row);
+                }
+                container.appendChild(wrapper);
+            }
+            createGrid(gridSize);
+
+            resetButton.addEventListener('click', ()=>{
+                let dimensions = parseInt(prompt("please Enter dimensions. (less than 100)"));
+                while (dimensions>100)
+                {
+                    dimensions = parseInt(prompt("please Enter dimensions. (less than 100)"));
+                    
+                }
+
+
+                const wrapper = document.querySelector('.wrapper');
+                wrapper.remove();
+                createGrid(dimensions);
+                
+            })
+
+        </script>
+
+    </body>
+
+
+    
+</html>

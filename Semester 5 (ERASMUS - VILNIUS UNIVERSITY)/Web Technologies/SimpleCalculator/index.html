@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+    <head>
+        <meta charset="utf-8">
+        <title>Project: Calculator</title>
+        <meta name="author" content="Georgia Petsa">
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <h1>
+        Project: Calculator 
+    </h1>
+    <div class = 'container'>
+        <div class = 'display'>
+            <div class = 'previous_number'></div>
+            <div class = 'current_number'></div>
+        </div>
+        <div class = 'buttons'>
+            <button class="number">1</button>
+            <button class="number">2</button>
+            <button class="number">3</button>
+            <button class="operator">+</button>
+        </div>
+        <div class ='buttons'>
+            <button class="number">4</button>
+            <button class="number">5</button>
+            <button class="number">6</button>
+            <button class="operator">-</button>
+        </div>
+        <div class ='buttuns'>
+            <button class="number">7</button>
+            <button class="number">8</button>
+            <button class="number">9</button>
+            <button class="operator">x</button>
+        </div>
+        <div class ='buttuns'>
+            <button class="number">0</button>
+            <button class="operator">/</button>
+            <button class="equal">=</button>
+            <button class="clear">Cl</button>
+        </div>
+    </div>
+    
+    <script>
+        let current_num ="";
+        let previous_num = "";
+        let operator = "";
+
+        const equal = document.querySelector(".equal");
+        equal.addEventListener("click", () => {
+        if (current_num != "" && previous_num != "") { //there should be a current and a previous number (at least 2 numbers)
+            final_computation();
+        }
+        });
+
+                
+        const clear = document.querySelector(".clear");
+        clear.addEventListener("click", clearCalculator);
+
+
+        const previous_num_on_display = document.querySelector('.previous_number');
+        const current_num_on_display = document.querySelector('.current_number');
+
+        const numbers = document.querySelectorAll('.number');
+        const operators = document.querySelectorAll('.operator');
+        
+        
+        
+        numbers.forEach( (btn) => { btn.addEventListener("click", (e) => { handle_number(e.target.textContent)}) });
+        
+        function handle_number(num)
+        {
+            current_num += num; //for updating the number (it's an string so for example 2+2 = 22 not 4 )
+            current_num_on_display.textContent = current_num;
+        }
+        
+        
+        
+        operators.forEach( (btn) => { btn.addEventListener("click", (e) => { handle_operator(e.target.textContent)}) });
+        
+        function handle_operator(op)
+        { //to be able to have calculations in a row (ex 1+6x2=14)
+            if (previous_num === "") // when we have the first number
+            {
+                previous_num = current_num;
+                operator = op
+                previous_num_on_display.textContent = previous_num + " " + operator;
+                current_num_on_display.textContent = "";
+                current_num = "";
+            } 
+            else if (current_num === "") //when we wait for the 2nd number to be given 
+            {
+                operator = op;
+                previous_num_on_display.textContent = previous_num + " " + operator;
+                current_num_on_display.textContent = "";
+                current_num = "";
+            } 
+            else //here we have both numbers
+            {
+                final_computation();
+                operator = op;
+                current_num_on_display.textContent = "";
+                previous_num_on_display.textContent = previous_num + " " + operator;
+            }
+        }
+
+
+        function final_computation() 
+        {
+            previous_num = Number(previous_num);
+            current_num = Number(current_num);
+
+            if (operator === "+") 
+            {
+                addition(previous_num,current_num);
+            } 
+            else if (operator === "-") 
+            {
+                substraction(previous_num, current_num);
+            } 
+            else if (operator === "x") 
+            {
+                multiplication(previous_num,current_num);
+            } 
+            else if (operator === "/") 
+            {
+                if (current_num <= 0) 
+                {
+                    previous_num = "Infinity";
+                    displayResults();
+                    return;
+                }
+                divide(previous_num, current_num)
+            }
+            previous_num = previous_num.toString();
+            displayResults();
+        }
+
+
+
+
+        function addition(x,y)
+        {
+            previous_num = x;
+            previous_num += y;
+        }
+        function substraction(x,y)
+        {
+            previous_num = x;
+            previous_num -= y;
+        }
+        function divide(x,y)
+        {
+            previous_num = x;
+            previous_num /= y;
+        }
+        function multiplication(x,y)
+        {
+            previous_num = x;
+            previous_num *= y;
+        }
+        
+
+        function displayResults() {
+            current_num_on_display.textContent = previous_num; 
+            previous_num_on_display.textContent = "";
+            operator = "";
+            current_num = "";
+        }
+
+        function clearCalculator() 
+        {
+            previous_num = "";
+            current_num = "";
+            
+            operator = "";
+
+            current_num_on_display.textContent = "";
+            previous_num_on_display.textContent = "";
+        }   
+    </script>
+
+</html>

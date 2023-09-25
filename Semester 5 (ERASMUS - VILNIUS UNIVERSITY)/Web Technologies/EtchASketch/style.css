@@ -1,0 +1,18 @@
+.container
+{
+    width: 960px;
+    margin: auto 0;
+}
+
+.row-grid
+{
+    display: flex;
+}
+
+.box-grid
+{
+    width: 50px;
+    height: 50px;
+    border: 1px solid rgb(161, 161, 161);
+    background-color: rgb(255, 255, 255);
+}

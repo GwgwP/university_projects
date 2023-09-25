@@ -1,0 +1,59 @@
+body{
+    background-color: #a7a7a7;
+}
+.display
+{
+    height: 50px;
+    width: 270px;
+    block-size: 50px;
+    border: 2px solid rgb(0, 0, 0);  
+    background-color: #5888e0;
+}
+
+
+.number{
+    background-color: #9c4b4b;
+    border: 1 px solid black;
+    color: rgb(0, 0, 0);
+    padding: 12px 21px;
+    font-size: 16px;
+    margin: 8px 3px;
+    cursor: pointer;
+}
+.operator{
+    background-color: #aaaaaa;
+    border: 1 px solid black;
+    color: rgb(0, 0, 0);
+    padding: 15px 21px;
+    font-size: 16px;
+    margin: 5px 6px;
+    cursor: pointer;
+}
+.equal{
+    background-color: #720000;
+    border: 1 px solid black;
+    color: rgb(0, 0, 0);
+    padding: 10px 20px;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+.clear{
+    background-color: #414d41;
+    border: 1 px solid black;
+    color: rgb(0, 0, 0);
+    padding: 10px 20px;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+.container{
+    margin-top: auto;
+    margin-left: auto;
+    margin-bottom: auto;
+    margin-right: auto;
+    background-color: rgb(199, 199, 199);
+    height: 300px;
+    width: 270px;
+    border: 2px solid black;
+}

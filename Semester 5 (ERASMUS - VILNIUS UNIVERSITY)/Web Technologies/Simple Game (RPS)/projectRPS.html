@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <meta charset="UTF-8">
+    <title>Game: Rock Paper Scissors</title>
+    </head>
+    <body>
+        
+        <h1>
+            Game: Rock Paper Scissors 
+        </h1>
+        <!-- this is for displaining the buttons -->
+        <div class = 'buttonsContainer'>
+            <button class="Rock">Rock</button>
+            <button class="Paper">Paper</button>
+            <button class="Scissors">Scissors</button>
+        </div>
+        
+        <!-- this is for displaining the text results e.g It's a draw, win, lose-->
+        <div class = 'results'> </div>
+        
+        <!-- this is for displaining the final results at the end of the game-->
+        <div class = 'final'></div>
+        
+        <!-- this is for displaining the running score -->
+        <div class = 'runningScore'>
+            <span class = "usersScore">User's Score: </span>
+            <span class = "computersScore">Computer's Score: </span>
+        </div>
+        
+        
+        <script>
+
+            let ComputerChoice; //The string version. e.g 'Rock'
+            let ComputerChoiceInt; //The int version. e.g 0
+            
+            let UserChoice;
+            let UserChoiceInt;
+            
+            let Userscore =0;
+            let Compscore =0;
+
+            let i=1; //for round calculation
+
+            const rockButton = document.querySelector('.Rock');
+            const paperButton = document.querySelector('.Paper');
+            const scissorsButton = document.querySelector('.Scissors');
+
+            const results = document.querySelector('.results');
+      
+            const runSc = document.querySelector('.runningScore');
+
+            const fin = document.querySelector('.final');
+
+            const us = document.querySelector('.usersScore');
+            const cs = document.querySelector('.computersScore');
+
+            function getRandomInt(max) 
+            {
+                /*
+                 * Returns a random integer from 0 to 2
+                 * illustration:
+                 *      0 -> Rock
+                 *      1 -> Paper
+                 *      2 -> Scissors
+                 * */
+                return Math.floor(Math.random()*max);
+            }
+
+            function getComputerChoice()
+            {
+                const com = document.createElement('com');
+                /*
+                 * Firstly, it calculates the computer's choice by getting a random number
+                 * and it assigns the int version and the string version to the appropriate variables. 
+                 * 
+                 * */
+                let choice = getRandomInt(3);
+                if (choice == 0)
+                {
+                    ComputerChoice = 'Rock';
+                }
+                else if (choice == 1)
+                {
+                    ComputerChoice = 'Paper';
+                }
+                else
+                {
+                    ComputerChoice = 'Scissors';
+                }
+                ComputerChoiceInt = choice;
+                
+                
+                return ComputerChoice;
+            }
+            
+            function calcWinner()
+            {
+                /*
+                 * Returns 'user'  if the winner is the User,
+                 * 'computer' if the winner is the Computer
+                 * 'draw' if it's a draw.
+                 */
+                if (ComputerChoiceInt == 0)
+                {
+                    if (UserChoiceInt == 0) return "draw"; 
+                    else if (UserChoiceInt == 1) 
+                    {
+                        ++Userscore;
+                        return "user";
+                    }
+                    else 
+                    {
+                        ++Compscore;
+                        return "computer";
+                    }
+                }
+                else if (ComputerChoiceInt == 1)
+                {
+                    if (UserChoiceInt == 0) 
+                    {
+                        ++Compscore;
+                        return "computer"; 
+                    }
+                    else if (UserChoiceInt == 1) return "draw";
+                    else 
+                    {
+                        ++Userscore;
+                        return "user";
+                    }
+                }
+                else // (ComputerChoiceInt == 2)
+                {
+                    if (UserChoiceInt == 0) 
+                    {
+                        ++Userscore;
+                        return "user";
+                    } 
+                    else if (UserChoiceInt == 1) 
+                    {
+                        ++Compscore;
+                        return "computer";
+                    }
+                    else return "draw";
+                }
+                
+            }
+
+            function playRound(playerSelection, computerSelection) 
+            {
+                const res = document.createElement('res');
+                const fins = document.createElement('fins');
+
+                const rs = document.createElement('rs');
+
+                let winner = calcWinner();
+                if (winner == "draw")
+                {
+                    res.innerText="It's a draw! You both have chosen "+ ComputerChoice+"\n";
+                    results.appendChild(res);
+                    return;
+                }
+                else if (winner == "user")
+                {
+                    res.innerText="The winner of the round "+i+" is the "+winner+". Congratulations!\n The "+UserChoice+" beats the "+ComputerChoice+"\n";
+                    results.appendChild(res);
+                }
+                else
+                {
+                    res.innerText="The winner of the round "+i+" is the "+winner+". Maybe next time you will win!\n The "+ComputerChoice+" beats the "+UserChoice+"\n";
+                    results.appendChild(res);
+                }
+                
+                
+            }
+
+            
+            const updateScore = (Userscore, Computerscore) =>
+            {
+                us.innerText="User's Score: "+Userscore;
+                us.style.color = "blue"
+                cs.innerText ="Computer's Score: "+Compscore;
+                cs.style.color = "blue"
+            }
+            const checkEnd = () =>
+            {
+                const fins = document.createElement('fins');
+                if (Compscore == 5 || Userscore == 5)
+                {
+                    if (Compscore>Userscore) {
+                        fins.innerText='The winner of the whole game is the Computer. The score is\t'+Compscore+' - '+Userscore+'\tfor the Computer.';
+                        fin.appendChild(fins);
+                        fin.style.cssText = "background-color: red;"
+                    }
+                    else if (Compscore<Userscore){
+                        fins.innerText='The winner of the whole game is the User. The score is\t'+Userscore+' - '+Compscore+'\tfor the User.';
+                        fin.appendChild(fins);
+                        fin.style.cssText="background-color: green;"
+                    }
+                    else 
+                    {
+                        fins.innerText="It's a draw... The score is:\t"+Userscore+' - '+Compscore;
+                        fin.appendChild(fins);
+                        fin.style.cssText = "background-color: yellow;"
+                    }
+
+                }
+            }
+
+
+            rockButton.addEventListener('click', ()=>
+            {
+                //const fins = document.createElement('fins');
+
+                getComputerChoice();
+                
+                UserChoice = 'Rock';
+                UserChoiceInt = 0;
+            
+                playRound();
+                ++i;
+               
+
+                updateScore(Userscore, Compscore);
+            
+                checkEnd();
+                
+            });
+
+
+            paperButton.addEventListener('click', ()=>
+            {
+                const fins = document.createElement('fins');
+                
+
+                getComputerChoice();
+                UserChoice = 'Paper';
+                UserChoiceInt = 1;
+                playRound();
+                ++i;
+
+                updateScore(Userscore, Compscore);
+                
+                checkEnd();
+               
+            });
+            scissorsButton.addEventListener('click',()=>{
+                const fins = document.createElement('fins');
+
+                getComputerChoice();
+              
+                UserChoice = 'Scissors';
+                UserChoiceInt = 2;
+                playRound();
+                ++i;
+
+                updateScore(Userscore, Compscore);
+
+                checkEnd();
+               
+
+            } );
+           
+        </script>
+
+    
+
+    </body>
+</html>
