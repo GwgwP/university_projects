@@ -39,13 +39,10 @@
 | 3543   |  Data Management and Analysis Systems [EC]          | 6     | 7   |
 | 3584   |  Technological Innovation and Entrepreneurship [E]  | 8     | 6   | 
 |||||
-| 3781   |  Computer Graphics [E]                              | 7     | 6   |
 | 3761   |  Network Security [E]                               | 7     | 6   |
 | 3515   |  Logic [EC]                                         | 5     | 7   | 
 | 3531   |  Artificial Intelligence [EC]                       | 5     | 7   | 
 | 3634   |  Compilers [E]                                      | 7     | 6   | 
-| 3745   |  Machine Learning [E]                               | 7     | 6   | 
-| 3882   |  Multimedia Technology [E]                          | 7     | 6   |
 |||||
 | 3612   |  Topics in Discrete Mathematics [E]                 | 8     | 6   | 
 | 3783   |  Human-Computer Interaction [E]                     | 8     | 6   | 
