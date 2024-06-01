@@ -45,9 +45,7 @@
 | 3634   |  Compilers [E]                                      | 7     | 6   | 
 |||||
 | 3612   |  Topics in Discrete Mathematics [E]                 | 8     | 6   | 
-| 3783   |  Human-Computer Interaction [E]                     | 8     | 6   | 
-| 3561   |  Computer Architecture [E]                          | 8     | 6   | 
-| 3743   |  Data Mining [E]                                    | 8     | 6   | 
-| 3713   |  Decision and Game Theory [E]                       | 8     | 6   | 
+| 3644   |  Information Retrieval Systems[E]                   | 8     | 6   | 
+| 3642   |  Software Verification, Validation, and Maintainance| 6     | 7   | 
 | 2610   |  Business Policy and Strategy [E]                   | 8     | 6   | 
 |||||
